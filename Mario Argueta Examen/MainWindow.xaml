@@ -15,21 +15,21 @@
         <Label Content="Pago por Horas Extra" HorizontalAlignment="Left" Margin="66,273,0,0" VerticalAlignment="Top"/>
         <Label Content="IHSS" HorizontalAlignment="Left" Margin="66,318,0,0" VerticalAlignment="Top"/>
         <Label Content="RAP" HorizontalAlignment="Left" Margin="66,366,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.455,-3.07"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" Text="{Binding Path=Nombre, Mode=TwoWay}"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" Text="{Binding Path=Identidad, Mode=TwoWay}"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" Text="{Binding Path=HorasTrabajadas, Mode=TwoWay}"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" Text="{Binding Path=PagoHora, Mode=TwoWay}"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" Text="{Binding Path=HoraExtra, Mode=TwoWay}"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" Text="{Binding Path=PagoHoraExtra, Mode=TwoWay}"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" Text="{Binding Path=IHSS, Mode=TwoWay}"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" Text="{Binding Path=RAP, Mode=TwoWay}"/>
         <Label Content="Sueldo sin Deducciones" HorizontalAlignment="Left" Margin="66,412,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.455,-3.07"/>
         <Label Content="Sueldo por Horas Extra" HorizontalAlignment="Left" Margin="66,455,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.455,-3.07"/>
         <Label Content="Deducciones" HorizontalAlignment="Left" Margin="66,504,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.455,-3.07"/>
         <Label Content="Sueldo Total del Empleado" HorizontalAlignment="Left" Margin="66,545,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.455,-3.07"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,412,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,455,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,504,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,548,0,-0.6" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,412,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" Text="{Binding Path=SueldoSinDeduccion, Mode=TwoWay}"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,455,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" Text="{Binding Path=SueldoHoraExtra, Mode=TwoWay}"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,504,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" Text="{Binding Path=Deduccion, Mode=TwoWay}"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,548,0,-0.6" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" Text="{Binding Path=TotalSueldo, Mode=TwoWay}"/>
     </Grid>
 </Window>
