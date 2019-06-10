@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Mario_Argueta_Examen"
         mc:Ignorable="d"
-        Title="MainWindow" Height="620" Width="800">
+        Title="MainWindow" Height="620" Width="650">
     <Grid>
         <Label Content="Nombre del Empleado" HorizontalAlignment="Left" Margin="66,55,0,0" VerticalAlignment="Top"></Label>
         <Label Content="Identidad del Empleado" HorizontalAlignment="Left" Margin="66,94,0,0" VerticalAlignment="Top"/>
@@ -31,5 +31,6 @@
         <TextBox HorizontalAlignment="Left" Height="23" Margin="321,455,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" Text="{Binding Path=SueldoHoraExtra, Mode=TwoWay}"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="321,504,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" Text="{Binding Path=Deduccion, Mode=TwoWay}"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="321,548,0,-0.6" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" Text="{Binding Path=TotalSueldo, Mode=TwoWay}"/>
+        <Label Content="Datos Empleado" HorizontalAlignment="center" Margin="255,10,291.2,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
