@@ -14,6 +14,8 @@ namespace Mario_Argueta_Examen
         public string horasTrabajadas;
         public string pagoPorHora;
         public string horaExtra;
+        public string pagoHoraExtra;
+        public string sueldoHorasExtra;
         public string iHSS;
         public string rAP;
         public string sueldoSinDeducciones;
@@ -99,6 +101,81 @@ namespace Mario_Argueta_Examen
                 IHSS = mult.ToString();
             }
         }
-
+        public string RAP
+        {
+            get
+            {
+                int RAP = int.Parse(SueldoSinDeducciones) * int.Parse("0.035");
+                return RAP.ToString();
+            }
+            set
+            {
+                int multx = int.Parse(SueldoSinDeducciones) * int.Parse("0.035");
+                RAP = multx.ToString();
+            }
+        }
+        public string PagoHoraExtra
+        {
+            get { return pagoHoraExtra; }
+            set
+            {
+                int num;
+                bool SueldoHoraExtra = int.TryParse(value, out num);
+                if (SueldoHoraExtra) pagoHoraExtra = value;
+                OnPropertyChanged("PagoHoraExtra");
+                OnPropertyChanged("SueldoHoraExtra");
+            }
+        }
+        public string HorasExtra
+        {
+            get { return horaExtra; }
+            set
+            {
+                int num;
+                bool SueldoHoraExtra = int.TryParse(value, out num);
+                if (SueldoHoraExtra) pagoHoraExtra = value;
+                OnPropertyChanged("HoraExtra");
+                OnPropertyChanged("SueldoHoraExtra");
+            }
+        }
+        public string SueldoHorasExtra
+        {
+            get
+            {
+                int sueldoHorasExtra = int.Parse(HorasExtra) * int.Parse(PagoHoraExtra);
+                return sueldoHorasExtra.ToString();
+            }
+            set
+            {
+                int multip = int.Parse(HorasExtra) * int.Parse(PagoHoraExtra);
+                SueldoHorasExtra = multip.ToString();
+            }
+        }
+        public string Deducciones
+        {
+            get
+            {
+                int deducciones = int.Parse(SueldoSinDeducciones) - (int.Parse(IHSS) + int.Parse(RAP));
+                return sueldoHorasExtra.ToString();
+            }
+            set
+            {
+                int rest = int.Parse(SueldoSinDeducciones) - (int.Parse(IHSS) + int.Parse(RAP));
+                SueldoHorasExtra = rest.ToString();
+            }
+        }
+        public string SueldoTotal
+        {
+            get
+            {
+                int sueldoTotal = int.Parse(SueldoSinDeducciones) - int.Parse(Deducciones);
+                return sueldoTotal.ToString();
+            }
+            set
+            {
+                int resta = int.Parse(SueldoSinDeducciones) - int.Parse(Deducciones);
+               SueldoTotal = resta.ToString();
+            }
+        }
     }
 }
