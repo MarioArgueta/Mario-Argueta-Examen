@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Mario_Argueta_Examen"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="800">
     <Grid>
-        
+        <Label Content="Nombre del Empleado" HorizontalAlignment="Left" Margin="66,55,0,0" VerticalAlignment="Top"></Label>
+        <Label Content="Identidad del Empleado" HorizontalAlignment="Left" Margin="66,110,0,0" VerticalAlignment="Top"/>
+        <Label Content="Horas Trabajadas" HorizontalAlignment="Left" Margin="66,171,0,0" VerticalAlignment="Top"/>
+        <Label Content="Pago por Hora" HorizontalAlignment="Left" Margin="66,232,0,0" VerticalAlignment="Top"/>
+        <Label Content="Horas Extra" HorizontalAlignment="Left" Margin="66,291,0,0" VerticalAlignment="Top"/>
+        <Label Content="Pago por Horas Extra" HorizontalAlignment="Left" Margin="66,348,0,0" VerticalAlignment="Top"/>
+        <Label Content="IHSS" HorizontalAlignment="Left" Margin="66,416,0,0" VerticalAlignment="Top"/>
+        <Label Content="RAP" HorizontalAlignment="Left" Margin="66,470,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,291,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,348,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,419,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="321,470,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
     </Grid>
 </Window>
